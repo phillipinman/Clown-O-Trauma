@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="clowndepthdecoyshell" tags="depthchargeammo,decoy" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="footstep_clown">
+    <PreferredContainer primary="depthchargeloader" secondary="ammoboxcontainer" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="iron" />
+      <Item identifier="bikehorn" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="depthdecoyshell" />
+      <RequiredItem identifier="bikehorn" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Content/Items/Weapons/clown_depthcharge_decoy.png" sourcerect="0,0,41,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/clown_depthcharge_decoy.png" sourcerect="0,0,129,88" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="85" density="11" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
+    <AiTarget soundrange="10000" fadeouttime="50" />
+    <Projectile characterusable="false" launchimpulse="5.0">
+      <Attack structuredamage="2" damagetype="Blunt">
+        <Affliction identifier="blunttrauma" strength="10" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" duration="30" stackable="false">
+        <sound file="%ModDir%/Content/Sounds/clown_depthchargedecoy.ogg" type="OnActive" range="50000" loop="true" dontmuffle="true" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Contained">
+        <Use />
+      </StatusEffect>
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="smallitem,explosive" />
+    </ItemContainer>
+  </Item>
+</Items>

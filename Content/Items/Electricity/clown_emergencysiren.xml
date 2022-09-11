@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="clown_emergencysiren" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="footstep_clown" isshootable="true">
+    <Price baseprice="100" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab" />
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="tin" />
+      <RequiredItem identifier="bikehorn" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Content/Items/Electricity/clown_emergencysiren.png" sourcerect="0,0,33,78" origin="0.5,0.5" />
+    <Sprite texture="clown_emergencysiren.png" depth="0.8" sourcerect="0,0,33,78" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="%ModDir%/Content/Items/Electricity/clown_emergencysiren.png" sourcerect="0,0,33,78" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Content/Sounds/carhorn.ogg" type="OnActive" range="1000.0" loop="true" volume="0.5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+</Items>

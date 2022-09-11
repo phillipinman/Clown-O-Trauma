@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="clown_suicidevest" scale="0.5" category="Equipment" tags="smallitem,clothing" description="A crude deadman's switch built into the frame of a bandolier. Don't drop below 50%!" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" secondary="crewcab" />
+    <Price baseprice="200">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="true" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="202,304,48,61" origin="0.45,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="216,210,78,95" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="40" />
+    <Deconstruct time="10" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="bikehorn" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+    </Fabricate>
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <Containable items="explosive" />
+    </ItemContainer>
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Security Vest" texture="Content/Items/JobGear/TalentGear.png" limb="Torso" hidelimb="false" sourcerect="215,209,79,97" inherittexturescale="true" origin="0.45,0.6" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+    </Wearable>
+  </Item>
+</Items>

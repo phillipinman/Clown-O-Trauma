@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <entityname.clown_flashbang_grenade>Clown FlashBang Grenade</entityname.clown_flashbang_grenade>
+  <entitydescription.clown_flashbang_grenade>A perfectly normal Bike Horn. Don't throw it. May contain concussive force.</entitydescription.clown_flashbang_grenade>
+  <entityname.clown_decoy_grenade>Clown Decoy Grenade</entityname.clown_decoy_grenade>
+  <entitydescription.clown_decoy_grenade>A perfectly normal Bike Horn. Don't throw it. This one plays Circus music for 20 seconds. Harmless but annoying. HONK!</entitydescription.clown_decoy_grenade>
+  <entityname.clown_emergencysiren>Clown Alarm</entityname.clown_emergencysiren>
+  <entitydescription.clown_emergencysiren>For when the Circus needs to stop clowning around. HONK!</entitydescription.clown_emergencysiren>
+  <entityname.clown_captain>Clown Captain Hat</entityname.clown_captain>
+  <entitydescription.clown_captain>For the leader of the Circus.</entitydescription.clown_captain>
+  <entityname.clowndepthdecoyshell>Clown Depth Charge</entityname.clowndepthdecoyshell>
+  <entitydescription.clowndepthdecoyshell>For when you want to roll the local wildlife.</entitydescription.clowndepthdecoyshell>
+  <entityname.clown_husk_grenade>Clown Husk Grenade</entityname.clown_husk_grenade>
+  <entitydescription.clown_husk_grenade>May get you beaten to death...</entitydescription.clown_husk_grenade>
+  <entityname.clown_suicidevest>Clown Happy Vest</entityname.clown_suicidevest>
+  <entitydescription.clown_suicidevest>Takes explosives and triggers below 50 percent health. I'll let you think about what it does.</entitydescription.clown_suicidevest>
+</infotexts>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Clown-O-Trauma" modversion="1.0.0" corepackage="False" gameversion="0.18.12.0" >
+  <Item file="%ModDir%/Content/Items/Weapons/clown_flashbang_grenade.xml" />
+  <Item file="%ModDir%/Content/Items/Weapons/clown_decoy_grenade.xml" />
+  <Item file="%ModDir%/Content/Items/Electricity/clown_emergencysiren.xml" />
+  <Item file="%ModDir%/Content/Items/Jobgear/clown_captain.xml" />
+  <!-- <Item file="%ModDir%/Content/Items/Weapons/clown_depthcharge_decoy.xml" /> -->
+  <Item file="%ModDir%/Content/Items/Weapons/clown_husk_grenade.xml" />
+  <Item file="%ModDir%/Content/Items/Jobgear/clown_suicidevest.xml" />
+  <Text file="%ModDir%/Content/Texts/clown_mod.xml" />
+  <Other file="%ModDir%/Content/Items/Electricity/clown_emergencysiren.png" />
+  <Other file="%ModDir%/Content/Items/Jobgear/clown_captain.png" />
+  <Other file="%ModDir%/Content/Items/Weapons/clown_depthcharge_decoy.png" />
+  <Other file="%ModDir%/Content/Sounds/clowncircustheme.ogg" />
+  <Other file="%ModDir%/Content/Sounds/carhorn.ogg" />
+  <!-- <Other file="%ModDir%/Content/Sounds/clown_depthchargedecoy.ogg" /> -->
+</contentpackage>
