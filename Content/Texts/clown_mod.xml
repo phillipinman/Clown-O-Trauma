@@ -14,4 +14,8 @@
   <entitydescription.clown_husk_grenade>May get you beaten to death...</entitydescription.clown_husk_grenade>
   <entityname.clown_suicidevest>Clown Happy Vest</entityname.clown_suicidevest>
   <entitydescription.clown_suicidevest>Takes explosives and triggers below 50 percent health. I'll let you think about what it does.</entitydescription.clown_suicidevest>
+  <entityname.clownderbuss>Clownderbuss</entityname.clownderbuss>
+  <entitydescription.clownderbuss>Uses Shotgun shells. Massive knockback.</entitydescription.clownderbuss>
+  <entityname.clownderbuss_shell>Clownderbuss</entityname.clownderbuss_shell>
+  <entitydescription.clownderbuss_shell>Uses Shotgun shells. Massive knockback.</entitydescription.clownderbuss_shell>
 </infotexts>
